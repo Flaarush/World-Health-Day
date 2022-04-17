@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>A fully Packed How To Stay Healthy Guide</title>
+	<style>
+		body {
+  		background-color: skyblue;
+  		margin: 0;
+			}
+		.menu{
+			width: 100%;
+			background: #142b47;
+			overflow: auto;
+		}
+		.menu ul{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			line-height: 60px;
+		}
+		.menu li{
+			float: left;
+		}
+		.menu ul li a{
+			background: #142b47;
+			text-decoration: none;
+			width: 130px;
+			display: block;
+			text-align: center;
+			color: #f2f2f2;
+			font-size: 18px;
+			font-family: sans-serif;
+			letter-spacing: 0.5px;
+		}
+		.menu li a:hover{
+			color: #fff;
+			opacity: 0.5;
+			font-size: 19px;
+
+		}
+		.search-form{
+			margin-top: 15px;
+			float: right;
+			margin-right: 100px;
+
+
+		}
+		input[type=text]{
+			padding: 7px;
+			border: none;
+			font-size: 16px;
+			font-family: sans-serif;
+
+		}
+		button{
+			float: right;
+			background: orange;
+			color: white;
+			border-radius: 0 5px 5px 0;
+			cursor: pointer;
+			position: relative;
+			padding: 7px;
+			font-family: sans-serif;
+			border: none;
+			font-size: 16px;
+		}
+		.p2{
+			color: darkgreen;
+			font-size: 20px;
+			font-family: monospace;
+			text-align: center;
+
+		}
+	h1{
+		text-align: center;
+		font-family: sans-serif;
+		color: indianred;
+	}
+	.p3{
+			color: darkgreen;
+			font-size: 20px;
+			font-family: monospace;
+			text-align: center;
+			background: lightsalmon;
+
+		}
+		li{
+			color: indianred;
+			font-family: monospace;
+			font-size: 20px;
+		}
+		#myUL a:hover:not(.header) {
+  background-color: #eee; }
+
+	</style>
+
+</head>
+<body>
+<nav class="menu">
+<ul>
+	
+<li><a href="Index.html">Home</a></li>
+<li><a href="How To Be healthy.html">Be healthy</a></li>
+<li><a href="Video.html">Video</a></li>
+<li><a href="Exercise.html">Exercise</a></li>
+<li><a href="Diet.html">Diet</a></li>
+<li><a href="#">Stay Healthy</a></li>
+<li><a href="The Doom quiz.html">Quiz</a></li>
+<li><a href="Bye Bye.html">Bye Bye</a></li>
+
+
+<form class="search-form">
+	<button>Search</button>
+	<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search anything here" title="Type in a name">
+	
+</form>
+</nav>
+
+  <a href="#Health" id="myUL">Health</a>
+  <a href="#Facts" id="myUL">Facts</a>
+
+
+
+<a id="Health"></a>
+<h1>A Super Awesome Guide For Good Health</h1>
+<p class="p2">Now it is World Health Day so it is only logical that I have to make this website. Have you ever heard the popular saying "Health is Wealth". This gives a large meaning to our life. Health is considered the most valuable and precious for every individual. Good health means not only the absence of disease in the body but a complete physical, mental, social and spiritual wellbeing of an individual.</p>
+<p class="p3">Now it is time for you see what you can do to be healthy. Lets guide you to get healthier. View the pointers and get ready for the Quiz. If you want to you can make notes. Now remember to be healthy. Did you know that broccoli contains more protein than steak</p> </a>
+<a id="Facts">
+<h1>Fun Facts</h1>
+
+<ul>
+<li>Did you know that broccoli contains more protein than steak.</li>
+<li>Dark chocolate has huge health benefits.</li>
+<li>Raspberries are a member of the rose family.</li>
+<li>Apples give you more energy than coffee.</li>
+<li>Pecans are rich woth antioxidants.</li>
+<li>Pistatios are actually fruits.</li>
+<li>Caesar salad originated from a Mexican city.</li>
+<li>Avocados are fruit</li>
+<li>Bananas are berries and strawberries aren't!</li>
+
+</ul>
+</a>
+
+<center><img src="https://online.ahu.edu/wp-content/uploads/2019/03/Healthy-Food-Doesnt-Have-To-Be-Expensive.jpg" height="600" width="1000"></center>
+
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+
+</body>
+</html>
